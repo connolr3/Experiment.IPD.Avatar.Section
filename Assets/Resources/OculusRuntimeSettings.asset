@@ -20,4 +20,4 @@ MonoBehaviour:
   telemetryEnabled: 0
   telemetryProjectGuid: f1a1555f-2776-4df5-bcb1-86e45af26e03
   bodyTrackingFidelity: 1
-  bodyTrackingJointSet: 0
+  bodyTrackingJointSet: 1

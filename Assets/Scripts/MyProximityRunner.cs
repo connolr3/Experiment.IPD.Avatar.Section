@@ -313,6 +313,11 @@ public OVRInput.Controller controller; // specify the controller (Left or Right)
         }
     }
     public GameObject floor;
+public GameObject leftTurnInteractor;
+public GameObject rightTurnInteractor;
+public string turnComponent;
+
+
     public string[] components;
     public void componentSet(bool enabled)
     {
@@ -335,6 +340,13 @@ public OVRInput.Controller controller; // specify the controller (Left or Right)
                 }
             }
         }
+   /*     if(leftTurnInteractor!=null && rightTurnInteractor!=null){
+                            MonoBehaviour lComponent = leftTurnInteractor.GetComponent(turnComponent) as MonoBehaviour;
+                            MonoBehaviour rComponent = rightTurnInteractor.GetComponent(turnComponent) as MonoBehaviour;
+                            lComponent.enabled = enabled;
+                            rComponent.enabled=enabled;
+
+        }*/
     }
 
 

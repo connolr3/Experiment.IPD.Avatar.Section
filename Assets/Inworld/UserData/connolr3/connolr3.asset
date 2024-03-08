@@ -1,0 +1,611 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146eba7038a14426a7d95a5b80da5291, type: 3}
+  m_Name: connolr3
+  m_EditorClassIdentifier: 
+  m_PlayerName: connolr3
+  m_PlayerData: []
+  m_Workspaces:
+  - name: workspaces/default-v77jxvnq5gqynno28xpyfq
+    displayName: Inworld AI Demos
+    experimentalFeatures: []
+    billingAccount: billing-accounts/22033502-0e5c-44b6-967b-e2c53940cc9a
+    meta: 
+    runtimeAccess: RUNTIME_ACCESS_PRIVATE
+    scenes: []
+    keySecrets: []
+  - name: workspaces/unity_npcs-iwomj
+    displayName: Unity NPCs
+    experimentalFeatures: []
+    billingAccount: billing-accounts/22033502-0e5c-44b6-967b-e2c53940cc9a
+    meta: 
+    runtimeAccess: RUNTIME_ACCESS_PRIVATE
+    scenes:
+    - name: workspaces/unity_npcs-iwomj/scenes/museum
+      displayName: Art Room
+      description: 'A room with one painting on display at all times, people generally
+        share knowledge to each other and chat here. '
+      characterReferences:
+      - character: workspaces/unity_npcs-iwomj/characters/sarah
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Sarah
+            description: "Sarah is calm and reserved. Sarah is  next to the painting
+              \"In the Mountains\" by Albert bierstadt. \nSarah does not talk about
+              the painting until the player asks questions about it.\nSarah does
+              not refer to the player by their real name, instead referring to them
+              with nicknames such as \"my friend\", \"pal\", and other friendly non-gendered
+              nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8_posture.jpg
+            avatarImg: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/b969051e-e2c5-4c3e-8ca1-bd1c875fe10e.jpg
+            avatarImgOriginal: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/b969051e-e2c5-4c3e-8ca1-bd1c875fe10e-original.jpg
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/emily
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Emily
+            description: "Emily is calm and reserved. Emily is  next to Irises by
+              Vincent Van Goph, which is one of four in the set of \"Irises Paintings\"
+              \nEmily does not talk about the painting until the player asks questions
+              about it.  \nEmily does not refer to the player by their real name,
+              instead referring to them with nicknames such as \"my friend\", \"pal\",
+              and other friendly non-gendered nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/jessica
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jessica
+            description: "Jesscia is calm and reserved. Jesscia is next to painting
+              \"The Last Supper\" by Leonardo Da Vinci.\n\nJesscia does not talk
+              about the painting until the player asks questions about it.  \n\nJesscia
+              does not refer to the player by their real name, instead referring
+              to them with nicknames such as \"my friend\", \"pal\", and other friendly
+              non-gendered nicknames.\n"
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/a4e3ee01-7784-4279-b63b-fa7ecb640270.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a4e3ee01-7784-4279-b63b-fa7ecb640270_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a4e3ee01-7784-4279-b63b-fa7ecb640270_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/ava
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Ava
+            description: "Ava is calm and reserved. Ava is next to painting \"Girl
+              with a Pearl Earring\" by Johannes Vermeer.\n\nAva does not talk about
+              the painting until the player asks questions about it.  \n\nSarah does
+              not refer to the player by their real name, instead referring to them
+              with nicknames such as \"my friend\", \"pal\", and other friendly non-gendered
+              nicknames.\n"
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/66072ccc-ba37-4d80-8cb0-a4ac70015210.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/66072ccc-ba37-4d80-8cb0-a4ac70015210_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/66072ccc-ba37-4d80-8cb0-a4ac70015210_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/emma
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Emma
+            description: 'Emma is calm and reserved. Emma is next to painting "Composition
+              VII (the three graces)" by Theo van Doesburg.
+
+
+              Emma
+              does not talk about the painting until the player asks questions about
+              it.
+
+
+              Emma does not refer to the player by their real
+              name, instead referring to them with nicknames such as "my friend",
+              "pal", and other friendly non-gendered nicknames.
+
+
+
+'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/5817c7c3-35b8-4b02-963e-6f0d71c53681.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5817c7c3-35b8-4b02-963e-6f0d71c53681_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5817c7c3-35b8-4b02-963e-6f0d71c53681_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/helen
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Helen
+            description: "Helen is very calm and reserved. Helen is  next to \"The
+              Swing\" by Jean-Honor\xE9 Fragonard.\n\nHelen does not refer to the
+              player by their real name, instead referring to them with nicknames
+              such as \"my friend\", \"pal\", and other friendly non-gendered nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/4560bb0c-e150-485d-b6b9-5d31c926aa51.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/4560bb0c-e150-485d-b6b9-5d31c926aa51_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/4560bb0c-e150-485d-b6b9-5d31c926aa51_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/jane
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jane
+            description: 'Jane is calm and reserved. Jane  is next to painting "Self-Portrait
+              with Thorn Necklace and Hummingbird" by Frida Kahlo
+
+              Jane
+              does not talk about the painting until the player asks questions about
+              it.
+
+
+              Jane does not refer to the player by their real
+              name, instead referring to them with nicknames such as "my friend",
+              "pal", and other friendly non-gendered nicknames.
+
+'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/be257b7c-b58f-49c6-b2ff-4e3195c8246c.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/be257b7c-b58f-49c6-b2ff-4e3195c8246c_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/be257b7c-b58f-49c6-b2ff-4e3195c8246c_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/rachel
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Rachel
+            description: '
+
+
+
+              Rachel is calm and reserved.  Rachel
+              is next to painting "Nighthawks" by Edward Hopper.
+
+
+              Rachel
+              does not talk about the painting until the player asks questions about
+              it.
+
+
+              Rachel does not refer to the player by their real
+              name, instead referring to them with nicknames such as "my friend",
+              "pal", and other friendly non-gendered nicknames.
+
+
+'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/fd4e9b63-1500-40d9-88e6-4f1525c771f1.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/fd4e9b63-1500-40d9-88e6-4f1525c771f1_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/fd4e9b63-1500-40d9-88e6-4f1525c771f1_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+    - name: workspaces/unity_npcs-iwomj/scenes/museum_building_
+      displayName: 'Museum Building '
+      description: "The Museum Building in Trinity College Dublin. Conceived and
+        erected between 1853 and 1857 by the Cork firm Dean and Woodward who also
+        built the famous Oxford University Museum of Natural History, the building
+        is one of the landmarks of Ruskinian Gothic architecture in Europe, as it
+        is most remarkable for the abundant use of coloured stone in its interior
+        and the breath-taking vista of the large central hall. The exterior and the
+        capitals of columns inside exhibit exquisite ornamental carvings by the legendary
+        master stonemasons John & James O\u2019Shea from Cork, while the internal
+        columns and staircase are made from marble and polished limestones. The central
+        hall further boasts of geological exhibits, with the skeletons of male and
+        female Giant Irish Deer in the entrance lobby.\n\nThe museum building is
+        also host to college students, mostly geology and geogrpahy stutends who
+        learn and study here."
+      characterReferences:
+      - character: workspaces/unity_npcs-iwomj/characters/faolan
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Luis
+            description: "Luis is calm and reserved. Luis is  next to Water Lilies
+              by Claude Monet. \nLuis does not talk about the painting until the
+              player asks questions about it.\nLuis does not refer to the player
+              by their real name, instead referring to them with nicknames such as
+              \"my friend\", \"pal\", and other friendly non-gendered nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/4329f944-a794-4e9b-9e13-9b5a0a9f66ef.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/4329f944-a794-4e9b-9e13-9b5a0a9f66ef_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/4329f944-a794-4e9b-9e13-9b5a0a9f66ef_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/ava
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Ava
+            description: "Ava is calm and reserved. Ava is next to painting \"Girl
+              with a Pearl Earring\" by Johannes Vermeer.\n\nAva does not talk about
+              the painting until the player asks questions about it.  \n\nSarah does
+              not refer to the player by their real name, instead referring to them
+              with nicknames such as \"my friend\", \"pal\", and other friendly non-gendered
+              nicknames.\n"
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/66072ccc-ba37-4d80-8cb0-a4ac70015210.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/66072ccc-ba37-4d80-8cb0-a4ac70015210_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/66072ccc-ba37-4d80-8cb0-a4ac70015210_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/emily
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Emily
+            description: "Emily is calm and reserved. Emily is  next to Irises by
+              Vincent Van Goph, which is one of four in the set of \"Irises Paintings\"
+              \nEmily does not talk about the painting until the player asks questions
+              about it.  \nEmily does not refer to the player by their real name,
+              instead referring to them with nicknames such as \"my friend\", \"pal\",
+              and other friendly non-gendered nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/dara
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Dara
+            description: "Dara is very welcoming and kind. Dara is  next to an oil
+              painting called \"Paris Street, Rainy Day\" by Gustave Caillebotte.
+              \nDara does not talk about the painting until the player asks questions
+              about it.\nDara does not refer to the player by their real name, instead
+              referring to them with nicknames such as \"my friend\", \"pal\", and
+              other friendly non-gendered nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/8b45046d-f11f-41ae-83a7-eedfaa1dadea.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/8b45046d-f11f-41ae-83a7-eedfaa1dadea_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/8b45046d-f11f-41ae-83a7-eedfaa1dadea_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/emma
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Emma
+            description: 'Emma is calm and reserved. Emma is next to painting "Composition
+              VII (the three graces)" by Theo van Doesburg.
+
+
+              Emma
+              does not talk about the painting until the player asks questions about
+              it.
+
+
+              Emma does not refer to the player by their real
+              name, instead referring to them with nicknames such as "my friend",
+              "pal", and other friendly non-gendered nicknames.
+
+
+
+'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/5817c7c3-35b8-4b02-963e-6f0d71c53681.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5817c7c3-35b8-4b02-963e-6f0d71c53681_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5817c7c3-35b8-4b02-963e-6f0d71c53681_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/jane
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jane
+            description: 'Jane is calm and reserved. Jane  is next to painting "Self-Portrait
+              with Thorn Necklace and Hummingbird" by Frida Kahlo
+
+              Jane
+              does not talk about the painting until the player asks questions about
+              it.
+
+
+              Jane does not refer to the player by their real
+              name, instead referring to them with nicknames such as "my friend",
+              "pal", and other friendly non-gendered nicknames.
+
+'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/be257b7c-b58f-49c6-b2ff-4e3195c8246c.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/be257b7c-b58f-49c6-b2ff-4e3195c8246c_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/be257b7c-b58f-49c6-b2ff-4e3195c8246c_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/jack
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jack
+            description: "Jack is calm and reserved. Jack is next to painting \"The
+              Persistence of Memory\" by Salvador Dal\xED.\n\nJack does not talk
+              about the painting until the player asks questions about it.\n\nJack
+              does not refer to the player by their real name, instead referring
+              to them with nicknames such as \"my friend\", \"pal\", and other friendly
+              non-gendered nicknames.\n"
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/60fc8df5-2d1f-40b4-838b-68e067edba07.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/60fc8df5-2d1f-40b4-838b-68e067edba07_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/60fc8df5-2d1f-40b4-838b-68e067edba07_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/jessica
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jessica
+            description: "Jesscia is calm and reserved. Jesscia is next to painting
+              \"The Last Supper\" by Leonardo Da Vinci.\n\nJesscia does not talk
+              about the painting until the player asks questions about it.  \n\nJesscia
+              does not refer to the player by their real name, instead referring
+              to them with nicknames such as \"my friend\", \"pal\", and other friendly
+              non-gendered nicknames.\n"
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/a4e3ee01-7784-4279-b63b-fa7ecb640270.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a4e3ee01-7784-4279-b63b-fa7ecb640270_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a4e3ee01-7784-4279-b63b-fa7ecb640270_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/marco
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Marco
+            description: 'Marco is calm and reserved. Marco is  next tothe painting
+              "Flaming June" by Sir Frederic Leighton.
+
+              Marco does
+              not talk about the painting until the player asks about it.
+
+              Marco
+              does not refer to the player by their real name, instead referring
+              to them with nicknames such as "my friend", "pal", and other friendly
+              non-gendered nicknames.'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/0887082e-f941-4457-86c0-148b2af52066.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/0887082e-f941-4457-86c0-148b2af52066_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/0887082e-f941-4457-86c0-148b2af52066_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/sam
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Sam
+            description: 'Sam is calm and reserved. Sam is next to painting "Ophelia"
+              by Sir John Everett Millais.
+
+
+              Sam does not talk about
+              the painting until the player asks questions about it.
+
+
+              Sam
+              does not refer to the player by their real name, instead referring
+              to them with nicknames such as "my friend", "pal", and other friendly
+              non-gendered nicknames.
+
+'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/6cd14811-91a0-47fb-9074-79224d55834c.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/6cd14811-91a0-47fb-9074-79224d55834c_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/6cd14811-91a0-47fb-9074-79224d55834c_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/sarah
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Sarah
+            description: "Sarah is calm and reserved. Sarah is  next to the painting
+              \"In the Mountains\" by Albert bierstadt. \nSarah does not talk about
+              the painting until the player asks questions about it.\nSarah does
+              not refer to the player by their real name, instead referring to them
+              with nicknames such as \"my friend\", \"pal\", and other friendly non-gendered
+              nicknames."
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8_posture.jpg
+            avatarImg: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/b969051e-e2c5-4c3e-8ca1-bd1c875fe10e.jpg
+            avatarImgOriginal: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/b969051e-e2c5-4c3e-8ca1-bd1c875fe10e-original.jpg
+            thumbnailProgress: 0
+            avatarProgress: 0
+      - character: workspaces/unity_npcs-iwomj/characters/tom
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Tom
+            description: 'Tom is very welcoming and kind. Tom is  next to "Composition
+              with Red, Blue and Yellow" by Piet Mondrian.
+
+
+              Tom does
+              not refer to the player by their real name, instead referring to them
+              with nicknames such as "my friend", "pal", and other friendly non-gendered
+              nicknames.'
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/ca2696c2-76e2-44a5-8348-d0cdb6d09408.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/ca2696c2-76e2-44a5-8348-d0cdb6d09408_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/ca2696c2-76e2-44a5-8348-d0cdb6d09408_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 0
+            avatarProgress: 0
+    - name: workspaces/unity_npcs-iwomj/scenes/room
+      displayName: Room
+      description: A room
+      characterReferences:
+      - character: workspaces/unity_npcs-iwomj/characters/cat
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Cat
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/699c5ffd-b288-40db-a5bf-7b28041aa089.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/699c5ffd-b288-40db-a5bf-7b28041aa089_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/699c5ffd-b288-40db-a5bf-7b28041aa089_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/julie
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Julie
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/2b2dc741-ea4e-4ab2-af4d-f1a089f793aa.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/2b2dc741-ea4e-4ab2-af4d-f1a089f793aa_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/2b2dc741-ea4e-4ab2-af4d-f1a089f793aa_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/issy
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Issy
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/c4edebd9-0793-4dce-a660-ee6dff08bf36.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/c4edebd9-0793-4dce-a660-ee6dff08bf36_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/c4edebd9-0793-4dce-a660-ee6dff08bf36_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/jenny
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jenny
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/8b9cd0ae-4428-4dda-8fbd-2d32dd38bdbe.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/8b9cd0ae-4428-4dda-8fbd-2d32dd38bdbe_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/8b9cd0ae-4428-4dda-8fbd-2d32dd38bdbe_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/liz
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Liz
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/39ffaf82-5ca6-4e56-a1c5-8a244431fdc5.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/39ffaf82-5ca6-4e56-a1c5-8a244431fdc5_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/39ffaf82-5ca6-4e56-a1c5-8a244431fdc5_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/mary
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Mary
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/49344636-deda-4b42-bb8e-158b08c66eb5.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/49344636-deda-4b42-bb8e-158b08c66eb5_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/49344636-deda-4b42-bb8e-158b08c66eb5_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/phoebe
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Phoebe
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/7ee34a17-f46e-49d8-aedf-2c5220eac3bb.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/7ee34a17-f46e-49d8-aedf-2c5220eac3bb_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/7ee34a17-f46e-49d8-aedf-2c5220eac3bb_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/rose
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Rose
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/3625cf01-49cc-4f8f-bc8b-3c5b10c069ba.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/3625cf01-49cc-4f8f-bc8b-3c5b10c069ba_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/3625cf01-49cc-4f8f-bc8b-3c5b10c069ba_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/jenna
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Jenna
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/10b83e5f-2911-491a-8537-d4bbe4fbcced.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/10b83e5f-2911-491a-8537-d4bbe4fbcced_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/10b83e5f-2911-491a-8537-d4bbe4fbcced_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+      - character: workspaces/unity_npcs-iwomj/characters/sara
+        characterOverloads:
+        - defaultCharacterDescription:
+            givenName: Sara
+            description: 
+          defaultCharacterAssets:
+            rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/bcb93453-63b5-4421-942c-b4af6aa197a0.glb
+            rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/bcb93453-63b5-4421-942c-b4af6aa197a0_portrait.jpg
+            rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/bcb93453-63b5-4421-942c-b4af6aa197a0_posture.jpg
+            avatarImg: 
+            avatarImgOriginal: 
+            thumbnailProgress: 1
+            avatarProgress: 1
+    keySecrets:
+    - key: 3axltjazfiQG0z2ALojkwmmeTmWxV5B9
+      secret: MhywIwE0W8p0Vj8RKPx2waeQzdM3A0Mtz6e68FWM1ZGQbgtTi2YwTzR9yP0CQmmu
+      state: ACTIVE
+  m_UserID: 
+  m_BillingAccount: billing-accounts/22033502-0e5c-44b6-967b-e2c53940cc9a

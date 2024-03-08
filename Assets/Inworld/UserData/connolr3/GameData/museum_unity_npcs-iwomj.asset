@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5abd9eaac9cc3e4585d7e8574c2511c, type: 3}
+  m_Name: museum_unity_npcs-iwomj
+  m_EditorClassIdentifier: 
+  sceneFullName: workspaces/unity_npcs-iwomj/scenes/museum
+  apiKey: 3axltjazfiQG0z2ALojkwmmeTmWxV5B9
+  apiSecret: MhywIwE0W8p0Vj8RKPx2waeQzdM3A0Mtz6e68FWM1ZGQbgtTi2YwTzR9yP0CQmmu
+  characters:
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/sarah
+    givenName: Sarah
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/f3bd58c4-d33e-474a-b8a7-b39ab7a6d9a8_posture.jpg
+      avatarImg: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/b969051e-e2c5-4c3e-8ca1-bd1c875fe10e.jpg
+      avatarImgOriginal: https://storage.googleapis.com/inworld-ai-usercontent-prod/2d_image/b969051e-e2c5-4c3e-8ca1-bd1c875fe10e-original.jpg
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/emily
+    givenName: Emily
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/9ac09143-5fcf-4e5c-aee1-9b3bd9f06886_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/jessica
+    givenName: Jessica
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/a4e3ee01-7784-4279-b63b-fa7ecb640270.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a4e3ee01-7784-4279-b63b-fa7ecb640270_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/a4e3ee01-7784-4279-b63b-fa7ecb640270_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/ava
+    givenName: Ava
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/66072ccc-ba37-4d80-8cb0-a4ac70015210.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/66072ccc-ba37-4d80-8cb0-a4ac70015210_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/66072ccc-ba37-4d80-8cb0-a4ac70015210_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/emma
+    givenName: Emma
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/5817c7c3-35b8-4b02-963e-6f0d71c53681.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5817c7c3-35b8-4b02-963e-6f0d71c53681_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5817c7c3-35b8-4b02-963e-6f0d71c53681_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/helen
+    givenName: Helen
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/4560bb0c-e150-485d-b6b9-5d31c926aa51.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/4560bb0c-e150-485d-b6b9-5d31c926aa51_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/4560bb0c-e150-485d-b6b9-5d31c926aa51_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/jane
+    givenName: Jane
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/be257b7c-b58f-49c6-b2ff-4e3195c8246c.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/be257b7c-b58f-49c6-b2ff-4e3195c8246c_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/be257b7c-b58f-49c6-b2ff-4e3195c8246c_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  - agentId: 
+    brainName: workspaces/unity_npcs-iwomj/characters/rachel
+    givenName: Rachel
+    characterAssets:
+      rpmModelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/fd4e9b63-1500-40d9-88e6-4f1525c771f1.glb
+      rpmImageUriPortrait: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/fd4e9b63-1500-40d9-88e6-4f1525c771f1_portrait.jpg
+      rpmImageUriPosture: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/fd4e9b63-1500-40d9-88e6-4f1525c771f1_posture.jpg
+      avatarImg: 
+      avatarImgOriginal: 
+      thumbnailProgress: 0
+      avatarProgress: 0
+    thumbnail: {fileID: 0}
+  capabilities:
+    audio: 1
+    emotions: 1
+    interruptions: 1
+    narratedActions: 1
+    text: 1
+    triggers: 1
+    phonemeInfo: 1
+    relations: 1
+    debugInfo: 1

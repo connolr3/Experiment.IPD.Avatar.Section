@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainExperiment.unity
+  - enabled: 0
+    path: Assets/Scenes/WALKING-TELEPORTING.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/TELEPORTING-WALKING.unity
+    guid: c9b38cf53918f0a469b0e9adce19afa9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 11f211814c131e545abb62ca27865df5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8a4319d2809c5d349991c69fd3966ec5, type: 2}

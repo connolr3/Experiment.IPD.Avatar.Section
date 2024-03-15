@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Inworld;
-public class MyProximityRunner : MonoBehaviour
+public class MyProximityRunnerTeleportWalking : MonoBehaviour
 {
     public Transform[] spawnPoints;
 
@@ -14,7 +14,6 @@ public class MyProximityRunner : MonoBehaviour
     public string[] Locomotion = { "Walking", "Teleportation" };
     public int TrialRepetitions;
 
-public bool isTeleportingFirst;
 
     public GameObject participantObject;
     public GameObject Finished;
@@ -38,9 +37,7 @@ public bool isTeleportingFirst;
 
     void Start()
     {
-        if(isTeleportingFirst)
-        {componentSet(true);}
-        else{componentSet(false);}
+        componentSet(true);
         InvokeRepeating("SetAnimatorOn", 0f, 0.3f);
         LastTrial = TrialRepetitions * Locomotion.Length;
         Debug.Log("Number of Trials: " + LastTrial);
@@ -98,8 +95,6 @@ public bool isTeleportingFirst;
 
                         if (currentTrial + 1 < LastTrial)
                             IsStartingNewBlock = experimentDesign[currentTrial + 1].Locomotion == "Teleportation" && firstTeleport;
-                        if (isTeleportingFirst&& currentTrial + 1 < LastTrial)
-                            IsStartingNewBlock = experimentDesign[currentTrial + 1].Locomotion == "Walking" && firstTeleport;
                         if (currentTrial + 1 != LastTrial && !IsStartingNewBlock)
                             TellParticipantToTurnAround();
                         SetUpNextTrial();
@@ -193,20 +188,8 @@ public bool isTeleportingFirst;
 
         Debug.Log("Trial Now Set to:" + currentTrial);
         // Debug.Log(experimentDesign[currentTrial].Locomotion);
-if(isTeleportingFirst){
-        if (experimentDesign[currentTrial].Locomotion == "Walking" && firstTeleport)
-        {
-            Debug.Log("block");
-            StartNewBlock();
-        }
-        else
-        {
-            GetAIReady();
-        }
 
-}
-else{
-            if (experimentDesign[currentTrial].Locomotion == "Teleportation" && firstTeleport)
+        if (experimentDesign[currentTrial].Locomotion == "Teleportation" && firstTeleport)
         {
             Debug.Log("block");
             StartNewBlock();
@@ -215,7 +198,6 @@ else{
         {
             GetAIReady();
         }
-}
 
 
     }
@@ -229,7 +211,7 @@ else{
         runningExperiment = true;
         thisAI = experimentDesign[currentTrial].TrialCharacter;
         thisAI.SetActive(true);
-          // InworldController.CurrentCharacter = thisAI;
+        //   InworldController.CurrentCharacter = thisAI;
         Inworld.InworldCharacter inworldCharacterComponent = thisAI.GetComponent<Inworld.InworldCharacter>();
         if (inworldCharacterComponent != null)
         {
@@ -309,13 +291,7 @@ else{
     private void StartNewBlock()
     {
         DeactivateParticipantObject();
-        if(isTeleportingFirst){
-  componentSet(false);//allow teleportation components
-        }
-        else{
-    componentSet(true);//allow teleportation components
-        }
-    
+        componentSet(false);//allow teleportation components
         firstTeleport = false;
 
         currentBlock++;

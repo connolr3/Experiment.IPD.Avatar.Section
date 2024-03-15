@@ -16,10 +16,13 @@ public class SendPosition : MonoBehaviour
 
     public Transform[] spawns;
     private float timer;
+  public Transform UserCam;
+    public Transform UserHips;
 
     void Start()
     {
         timer = sendInterval;
+        firstTime=true;
     }
 
 
@@ -35,15 +38,14 @@ public class SendPosition : MonoBehaviour
             timer = sendInterval;
         }
     }
-    private bool firstTime = true;
+    private static bool firstTime = true;
     void SendRegularData()
     {
         List<string> positions = new List<string>();
            if (firstTime)
         {
-            // Add spawn positions (assuming spawns array is not changed dynamically)
-            positions.Add($"{{\"name\":\"SpawnA\", \"position\":\"{spawns[0].position.x},{spawns[0].position.y},{spawns[0].position.z}\", \"timestamp\":\"{GetTimestamp()}\"}}");
-            positions.Add($"{{\"name\":\"SpawnB\", \"position\":\"{spawns[1].position.x},{spawns[1].position.y},{spawns[1].position.z}\", \"timestamp\":\"{GetTimestamp()}\"}}");
+                DateTime currentDate = DateTime.Now;
+             positions.Add($"{{\"name\":\"BLOCK: ProximityCheck{currentDate.ToString("yyyy-MM-dd HH:mm:ss")} \", \"position\":\" UserCamX, UserCamY, UserCamZ, UserHipsX, UserHipsY, UserHipsZ, AIHeadX, AIHeadY, AIHeadZ, AIHipsX, AIHipsY,AIHipsZ\", \"timestamp\":\"TimeStamp\"}}");
             firstTime = false;
         }
 
@@ -57,7 +59,7 @@ if(jsonData!=""||jsonData!=null)
     }
 
 
-    public void AddComfortDistanceEventTeleport()
+    /*public void AddComfortDistanceEventTeleport()
     {
         string timestamp = GetTimestamp();
         string teleportData ="";
@@ -69,9 +71,58 @@ if(jsonData!=""||jsonData!=null)
 
             }
         teleportEvents.Add(teleportData);
-    }
+    }*/
 
-    public void AddComfortDistanceEventWalk()
+
+  public void AddComfortDistanceEventTeleport(){
+      string teleportData ="";
+        string mytimestamp = GetTimestamp();
+            // Check if AIHead is not null, use its position; otherwise, use -1,-1,-1
+            string aiHeadPosition = AIHead != null
+                ? $"{AIHead.position.x},{AIHead.position.y},{AIHead.position.z}"
+                : "-1,-1,-1";
+
+            // Check if AIHips is not null, use its position; otherwise, use -1,-1,-1
+            string aiHipsPosition = AIHips != null
+                ? $"{AIHips.position.x},{AIHips.position.y},{AIHips.position.z}"
+                : "-1,-1,-1";
+
+            teleportData =$"{{\"name\":\"Teleport {InworldController.CurrentCharacter.name}\", \"position\":\"{UserCam.position.x},{UserCam.position.y},{UserCam.position.z},{UserHips.position.x},{UserHips.position.y},{UserHips.position.z},{aiHeadPosition},{aiHipsPosition}\", \"timestamp\":\"{mytimestamp}\"}}";
+            //  positions.Add($"{{\"name\":\"Position Data\", \"position\":\"{UserCam.position.x},{UserCam.position.y},{UserCam.position.z},{UserHips.position.x},{UserHips.position.y},{UserHips.position.z},{0},{0},{0},{0},{0},{0}\", \"timestamp\":\"{mytimestamp}\"}}");
+   teleportEvents.Add(teleportData);
+
+  }
+
+
+    public void AddComfortDistanceEventWalk(){
+      string teleportData ="";
+        string mytimestamp = GetTimestamp();
+            // Check if AIHead is not null, use its position; otherwise, use -1,-1,-1
+            string aiHeadPosition = AIHead != null
+                ? $"{AIHead.position.x},{AIHead.position.y},{AIHead.position.z}"
+                : "-1,-1,-1";
+
+            // Check if AIHips is not null, use its position; otherwise, use -1,-1,-1
+            string aiHipsPosition = AIHips != null
+                ? $"{AIHips.position.x},{AIHips.position.y},{AIHips.position.z}"
+                : "-1,-1,-1";
+
+            teleportData =$"{{\"name\":\"Walk {InworldController.CurrentCharacter.name}\", \"position\":\"{UserCam.position.x},{UserCam.position.y},{UserCam.position.z},{UserHips.position.x},{UserHips.position.y},{UserHips.position.z},{aiHeadPosition},{aiHipsPosition}\", \"timestamp\":\"{mytimestamp}\"}}";
+            //  positions.Add($"{{\"name\":\"Position Data\", \"position\":\"{UserCam.position.x},{UserCam.position.y},{UserCam.position.z},{UserHips.position.x},{UserHips.position.y},{UserHips.position.z},{0},{0},{0},{0},{0},{0}\", \"timestamp\":\"{mytimestamp}\"}}");
+   teleportEvents.Add(teleportData);
+  }
+
+
+  private Transform AIHips;
+  private Transform AIHead;
+
+  public void setNewAIObjects(Transform thisAIHips, Transform thisAIHead)
+    {
+        AIHips = thisAIHips;
+        AIHead = thisAIHead;
+
+    }
+/*    public void AddComfortDistanceEventWalk()
     {
         string timestamp = GetTimestamp();
         string teleportData ="";
@@ -81,7 +132,7 @@ if(jsonData!=""||jsonData!=null)
         teleportData = $"{{\"name\":\"Walk:{go.name}AI:{InworldController.CurrentCharacter}\", \"position\":\"{position.x},{position.y},{position.z}\", \"timestamp\":\"{GetTimestamp()}\"}}";
             }
         teleportEvents.Add(teleportData);
-    }
+    }*/
 
     public void AddAIOpenEvent()
     {
@@ -118,7 +169,7 @@ if(jsonData!=""||jsonData!=null)
             }
             else
             {
-                Debug.Log("Response: " + webRequest.downloadHandler.text);
+            //    Debug.Log("Response: " + webRequest.downloadHandler.text);
             }
         }
     }

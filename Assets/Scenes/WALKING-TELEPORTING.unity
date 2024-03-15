@@ -325,6 +325,7 @@ MonoBehaviour:
 
 
     Reminder: You do not have to speak to the characters!
+    You will use WALKING first.
 
 
 
@@ -2819,6 +2820,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _providedSkeletonType: 1
+--- !u!4 &481112149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3742407835892290726, guid: 4b4007f195bae174f8df32392f78c8aa, type: 3}
+  m_PrefabInstance: {fileID: 481112144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &481112150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4b4007f195bae174f8df32392f78c8aa, type: 3}
@@ -3809,7 +3815,7 @@ RectTransform:
   m_GameObject: {fileID: 772713078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.89939, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938636207}
@@ -3839,7 +3845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 33e7d521d81747441bcc788fba9e209a, type: 3}
+  m_Texture: {fileID: 2800000, guid: 769455516c84198468572d63b726b5ab, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4640,7 +4646,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e6ff49956e9af4040ad4e6fda593db22, type: 3}
+  m_Texture: {fileID: 2800000, guid: 769455516c84198468572d63b726b5ab, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6060,6 +6066,8 @@ MonoBehaviour:
   spawns:
   - {fileID: 1056809965}
   - {fileID: 761320414}
+  UserCam: {fileID: 98241183}
+  UserHips: {fileID: 481112149}
 --- !u!114 &1320427324
 MonoBehaviour:
   m_ObjectHideFlags: 0

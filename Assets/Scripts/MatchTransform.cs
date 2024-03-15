@@ -12,6 +12,8 @@ public class MatchTransform : MonoBehaviour
 
      public Transform cameraOffset;
     public GameObject MainCamera;
+public GameObject toDisableOnMid;
+     public MyProximityRunner myrunner;
  //public InputActionProperty ResetPosition; 
 
     // Update is called once per frame
@@ -21,14 +23,50 @@ void Start(){
     void Update(){
        // Debug.Log(InworldController.CurrentCharacter);
         if(Input.GetKey("m")){
-            Match();
+            MoveXROriginToFinalPosXY();
+        }
+
+           if(Input.GetKey("c")){
+ toDisableOnMid.SetActive(false);
+ myrunner.ContinueExperimentAfterBlockInstructions();
+            MoveXROriginToFinalPosXY();
+           // myrunner.componentSet(true);
         }
        // if(ResetPosition.action.ReadValue<float>()>0.5f){
     // Match();
        // }
     }
 
-    private void MoveXROriginToFinalPos()
+  
+
+    private void MoveXROriginToFinalPosXY()
+    {
+        if (rig != null && MainCamera != null)
+        {
+            // Calculate the offset needed to move MainCamera to finalPos (only affecting X and Z)
+            Vector3 offset = new Vector3(targetMatch.position.x - MainCamera.transform.position.x, 0f, targetMatch.position.z - MainCamera.transform.position.z);
+
+            // Move XROrigin with the calculated offset
+            rig.transform.position += offset;
+
+
+                        float totalYRotation = targetMatch.eulerAngles.y;
+            float currentYRotation = MainCamera.transform.eulerAngles.y;
+
+            // Calculate the rotation needed to go from the current Y rotation to the total Y rotation
+            float deltaRotation = totalYRotation - currentYRotation;
+            Quaternion rotationNeeded = Quaternion.Euler(0f, deltaRotation, 0f);
+
+            // Apply the calculated rotation to toMatch
+            toMatch.transform.rotation *= rotationNeeded;
+        }
+        else
+        {
+            Debug.LogWarning("Set 'XROrigin' and 'MainCamera' references in the inspector.");
+        }
+    }
+
+     private void MoveXROriginToFinalPos()
     {
         if (rig != null && MainCamera != null)
         {
@@ -43,6 +81,7 @@ void Start(){
             Debug.LogWarning("Set 'XROrigin' and 'MainCamera' references in the inspector.");
         }
     }
+
 
 
     public void Match()

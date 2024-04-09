@@ -948,32 +948,40 @@ PrefabInstance:
       value: 0.791612
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: _endFadeThresold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.b
-      value: 0.2134434
+      value: 0.2117647
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.g
-      value: 0.8537736
+      value: 0.41259477
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.r
-      value: 0.4315475
+      value: 0.85490197
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key1.b
-      value: 0.18823424
+      value: 0.18823528
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key1.g
-      value: 0.8490566
+      value: 0.19493116
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key1.r
-      value: 0.81720614
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: _startFadeThresold
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1845803221355852953, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.m_ColorSpace
@@ -992,32 +1000,40 @@ PrefabInstance:
       value: 0.791612
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: _endFadeThresold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.b
-      value: 0.2134434
+      value: 0.2117647
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.g
-      value: 0.8537736
+      value: 0.41259477
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key0.r
-      value: 0.4315475
+      value: 0.85490197
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key1.b
-      value: 0.18823424
+      value: 0.18823528
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key1.g
-      value: 0.8490566
+      value: 0.19493116
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.key1.r
-      value: 0.81720614
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
+      propertyPath: _startFadeThresold
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1845803222645230052, guid: f54012181eacade4ea242c65f804720f, type: 3}
       propertyPath: _gradient.m_ColorSpace
@@ -4589,6 +4605,8 @@ MonoBehaviour:
   targetMatch: {fileID: 1091633150}
   cameraOffset: {fileID: 1075112153}
   MainCamera: {fileID: 98241184}
+  toDisableOnMid: {fileID: 0}
+  myrunner: {fileID: 0}
 --- !u!1 &913880158
 GameObject:
   m_ObjectHideFlags: 0
@@ -6102,6 +6120,7 @@ MonoBehaviour:
   - Walking
   - Teleportation
   TrialRepetitions: 5
+  isTeleportingFirst: 0
   participantObject: {fileID: 540047740}
   Finished: {fileID: 1133167129}
   sendPositionScript: {fileID: 1320427323}
